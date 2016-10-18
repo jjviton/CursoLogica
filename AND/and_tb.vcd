@@ -1,0 +1,77 @@
+$date
+	Tue Oct 18 22:50:29 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ns
+$end
+$scope module and_tb $end
+$var wire 1 ! cableC $end
+$var reg 1 " cableA $end
+$var reg 1 # cableB $end
+$scope module SB1 $end
+$var wire 1 ! v676ecb $end
+$var wire 1 # va57306 $end
+$var wire 1 " va9742d $end
+$var wire 1 $ w1 $end
+$var wire 1 % w2 $end
+$var wire 1 & w0 $end
+$scope module v6e33e9 $end
+$var wire 1 $ v0e28cb $end
+$var wire 1 % v3ca442 $end
+$var wire 1 & vcbab45 $end
+$var wire 1 ' w0 $end
+$var wire 1 ( w1 $end
+$var wire 1 ) w2 $end
+$scope module vf4938a $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var wire 1 ) c $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#500
+1!
+1&
+1)
+1'
+1$
+1"
+1(
+1%
+1#
+#700
+0!
+0&
+0)
+0'
+0$
+0"
+#900
+1'
+1$
+1"
+0(
+0%
+0#
+#1100
+0'
+0$
+0"
+#11300
