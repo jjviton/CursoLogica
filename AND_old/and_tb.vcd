@@ -1,5 +1,5 @@
 $date
-	Sun Oct 23 18:07:24 2016
+	Tue Oct 18 22:50:29 2016
 $end
 $version
 	Icarus Verilog
@@ -7,11 +7,11 @@ $end
 $timescale
 	10ns
 $end
-$scope module main_tb $end
-$var wire 1 ! output_o $end
-$var reg 1 " input_in_a $end
-$var reg 1 # input_in_b $end
-$scope module MAIN $end
+$scope module and_tb $end
+$var wire 1 ! cableC $end
+$var reg 1 " cableA $end
+$var reg 1 # cableB $end
+$scope module SB1 $end
 $var wire 1 ! v676ecb $end
 $var wire 1 # va57306 $end
 $var wire 1 " va9742d $end
@@ -74,4 +74,4 @@ $end
 0'
 0$
 0"
-#1400
+#11300

@@ -58,7 +58,7 @@ module main_tb ();
   input_in_a = 0;
   #20
   
-  // JJVITON testing process  (fin)  
+  
   
   
   
