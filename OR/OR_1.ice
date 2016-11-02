@@ -2,7 +2,7 @@
   "image": "",
   "state": {
     "pan": {
-      "x": -1,
+      "x": 0,
       "y": 0
     },
     "zoom": 1
@@ -11,16 +11,46 @@
   "graph": {
     "blocks": [
       {
-        "id": "38cfb7f5-20aa-43c5-ac93-b5df543c8db1",
-        "type": "logic.gate.and",
-        "data": {},
+        "id": "6ac11874-0116-4503-baee-165ce7db75b3",
+        "type": "basic.input",
+        "data": {
+          "label": "A",
+          "pin": {
+            "name": "SW1",
+            "value": "10"
+          }
+        },
         "position": {
-          "x": 688,
-          "y": 256
+          "x": 136,
+          "y": 40
         }
       },
       {
-        "id": "871aa3a5-156b-4f75-966e-8795bd782bd9",
+        "id": "8671af8b-7d30-46e5-89f7-943faba2d6ac",
+        "type": "basic.input",
+        "data": {
+          "label": "B",
+          "pin": {
+            "name": "GP1",
+            "value": "38"
+          }
+        },
+        "position": {
+          "x": 136,
+          "y": 136
+        }
+      },
+      {
+        "id": "59b63dfb-7adb-459b-b37d-8c67b11a174a",
+        "type": "logic.gate.or",
+        "data": {},
+        "position": {
+          "x": 352,
+          "y": 80
+        }
+      },
+      {
+        "id": "cd24a493-267a-439c-8c10-f10e0e6115d0",
         "type": "basic.output",
         "data": {
           "label": "o",
@@ -30,87 +60,46 @@
           }
         },
         "position": {
-          "x": 984,
-          "y": 256
-        }
-      },
-      {
-        "id": "fea12353-394a-4b1b-97bb-d43111b90e20",
-        "type": "basic.input",
-        "data": {
-          "label": "in_a",
-          "pin": {
-            "name": "GP1",
-            "value": "38"
-          }
-        },
-        "position": {
-          "x": 408,
-          "y": 224
-        }
-      },
-      {
-        "id": "30b46203-d5e9-431d-913f-1e625b5b329c",
-        "type": "basic.input",
-        "data": {
-          "label": "in_b",
-          "pin": {
-            "name": "GP2",
-            "value": "39"
-          }
-        },
-        "position": {
-          "x": 408,
-          "y": 312
-        }
-      },
-      {
-        "id": "960d8072-32fa-48d1-842f-0fcf90e270bf",
-        "type": "basic.info",
-        "data": {
-          "info": "\nPUERTA AND"
-        },
-        "position": {
-          "x": 592,
-          "y": 408
+          "x": 568,
+          "y": 80
         }
       }
     ],
     "wires": [
       {
         "source": {
-          "block": "38cfb7f5-20aa-43c5-ac93-b5df543c8db1",
-          "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+          "block": "8671af8b-7d30-46e5-89f7-943faba2d6ac",
+          "port": "out"
         },
         "target": {
-          "block": "871aa3a5-156b-4f75-966e-8795bd782bd9",
-          "port": "in"
+          "block": "59b63dfb-7adb-459b-b37d-8c67b11a174a",
+          "port": "97b51945-d716-4b6c-9db9-970d08541249"
         }
       },
       {
         "source": {
-          "block": "fea12353-394a-4b1b-97bb-d43111b90e20",
+          "block": "6ac11874-0116-4503-baee-165ce7db75b3",
           "port": "out"
         },
         "target": {
-          "block": "38cfb7f5-20aa-43c5-ac93-b5df543c8db1",
+          "block": "59b63dfb-7adb-459b-b37d-8c67b11a174a",
           "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
         }
       },
       {
         "source": {
-          "block": "30b46203-d5e9-431d-913f-1e625b5b329c",
-          "port": "out"
+          "block": "59b63dfb-7adb-459b-b37d-8c67b11a174a",
+          "port": "664caf9e-5f40-4df4-800a-b626af702e62"
         },
         "target": {
-          "block": "38cfb7f5-20aa-43c5-ac93-b5df543c8db1",
-          "port": "97b51945-d716-4b6c-9db9-970d08541249"
+          "block": "cd24a493-267a-439c-8c10-f10e0e6115d0",
+          "port": "in"
         }
       }
     ]
   },
   "deps": {
-    "logic.gate.and": {
+    "logic.gate.or": {
       "graph": {
         "blocks": [
           {
@@ -150,7 +139,7 @@
             "id": "00925b04-5004-4307-a737-fa4e97c8b6ab",
             "type": "basic.code",
             "data": {
-              "code": "// AND logic gate\n\nassign c = a & b;",
+              "code": "// OR logic gate\n\nassign c = a | b;",
               "ports": {
                 "in": [
                   "a",
@@ -201,7 +190,7 @@
         ]
       },
       "deps": {},
-      "image": "resources/images/and.svg",
+      "image": "resources/images/or.svg",
       "state": {
         "pan": {
           "x": 0,

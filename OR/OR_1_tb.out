@@ -1,0 +1,128 @@
+#! /usr/local/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0497b828 .scope module, "SB_IO" "SB_IO" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INOUT 1 "PACKAGE_PIN"
+    .port_info 1 /INPUT 1 "LATCH_INPUT_VALUE"
+    .port_info 2 /INPUT 1 "CLOCK_ENABLE"
+    .port_info 3 /INPUT 1 "INPUT_CLK"
+    .port_info 4 /INPUT 1 "OUTPUT_CLK"
+    .port_info 5 /INPUT 1 "OUTPUT_ENABLE"
+    .port_info 6 /INPUT 1 "D_OUT_0"
+    .port_info 7 /INPUT 1 "D_OUT_1"
+    .port_info 8 /OUTPUT 1 "D_IN_0"
+    .port_info 9 /OUTPUT 1 "D_IN_1"
+P_0497bc20 .param/str "IO_STANDARD" 0 2 16, "SB_LVCMOS";
+P_0497bc40 .param/l "NEG_TRIGGER" 0 2 15, C4<0>;
+P_0497bc60 .param/l "PIN_TYPE" 0 2 13, C4<000000>;
+P_0497bc80 .param/l "PULLUP" 0 2 14, C4<0>;
+o0497f15c .functor BUFZ 1, C4<z>; HiZ drive
+v0497a8a8_0 .net "CLOCK_ENABLE", 0 0, o0497f15c;  0 drivers
+o0497f174 .functor BUFZ 1, C4<z>; HiZ drive
+v0497a900_0 .net "D_IN_0", 0 0, o0497f174;  0 drivers
+o0497f18c .functor BUFZ 1, C4<z>; HiZ drive
+v0497a958_0 .net "D_IN_1", 0 0, o0497f18c;  0 drivers
+o0497f1a4 .functor BUFZ 1, C4<z>; HiZ drive
+v0497a9b0_0 .net "D_OUT_0", 0 0, o0497f1a4;  0 drivers
+o0497f1bc .functor BUFZ 1, C4<z>; HiZ drive
+v0497aa08_0 .net "D_OUT_1", 0 0, o0497f1bc;  0 drivers
+o0497f1d4 .functor BUFZ 1, C4<z>; HiZ drive
+v0497aa60_0 .net "INPUT_CLK", 0 0, o0497f1d4;  0 drivers
+o0497f1ec .functor BUFZ 1, C4<z>; HiZ drive
+v0497aab8_0 .net "LATCH_INPUT_VALUE", 0 0, o0497f1ec;  0 drivers
+o0497f204 .functor BUFZ 1, C4<z>; HiZ drive
+v0497ab10_0 .net "OUTPUT_CLK", 0 0, o0497f204;  0 drivers
+o0497f21c .functor BUFZ 1, C4<z>; HiZ drive
+v0497ab68_0 .net "OUTPUT_ENABLE", 0 0, o0497f21c;  0 drivers
+o0497f234 .functor BUFZ 1, C4<z>; HiZ drive
+v0497abc0_0 .net "PACKAGE_PIN", 0 0, o0497f234;  0 drivers
+S_04972dd8 .scope module, "main_tb" "main_tb" 3 11;
+ .timescale -8 -9;
+P_04973f78 .param/l "DURATION" 0 3 14, +C4<00000000000000000000000000001010>;
+v0497b140_0 .var "input_A", 0 0;
+v0497b198_0 .var "input_B", 0 0;
+v0497b1f0_0 .net "output_o", 0 0, L_049afa58;  1 drivers
+S_04972ea8 .scope module, "MAIN" "main" 3 22, 4 6 0, S_04972dd8;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "v963cc9"
+    .port_info 1 /INPUT 1 "v645ecc"
+    .port_info 2 /OUTPUT 1 "vd1c097"
+L_049af9c8 .functor BUFZ 1, v0497b198_0, C4<0>, C4<0>, C4<0>;
+L_049afa10 .functor BUFZ 1, v0497b140_0, C4<0>, C4<0>, C4<0>;
+L_049afa58 .functor BUFZ 1, L_049afb30, C4<0>, C4<0>, C4<0>;
+v0497af30_0 .net "v645ecc", 0 0, v0497b198_0;  1 drivers
+v0497af88_0 .net "v963cc9", 0 0, v0497b140_0;  1 drivers
+v0497afe0_0 .net "vd1c097", 0 0, L_049afa58;  alias, 1 drivers
+v0497b038_0 .net "w0", 0 0, L_049af9c8;  1 drivers
+v0497b090_0 .net "w1", 0 0, L_049afa10;  1 drivers
+v0497b0e8_0 .net "w2", 0 0, L_049afb30;  1 drivers
+S_02dfefb0 .scope module, "v9285f8" "main_logic_gate_or" 4 15, 4 22 0, S_04972ea8;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "v0e28cb"
+    .port_info 1 /INPUT 1 "v3ca442"
+    .port_info 2 /OUTPUT 1 "vcbab45"
+L_049afaa0 .functor BUFZ 1, L_049afa10, C4<0>, C4<0>, C4<0>;
+L_049afae8 .functor BUFZ 1, L_049af9c8, C4<0>, C4<0>, C4<0>;
+L_049afb30 .functor BUFZ 1, L_049afb78, C4<0>, C4<0>, C4<0>;
+v0497ad20_0 .net "v0e28cb", 0 0, L_049afa10;  alias, 1 drivers
+v0497ad78_0 .net "v3ca442", 0 0, L_049af9c8;  alias, 1 drivers
+v0497add0_0 .net "vcbab45", 0 0, L_049afb30;  alias, 1 drivers
+v0497ae28_0 .net "w0", 0 0, L_049afaa0;  1 drivers
+v0497ae80_0 .net "w1", 0 0, L_049afae8;  1 drivers
+v0497aed8_0 .net "w2", 0 0, L_049afb78;  1 drivers
+S_02dff080 .scope module, "vf4938a" "main_logic_gate_or_basic_code_vf4938a" 4 31, 4 38 0, S_02dfefb0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /OUTPUT 1 "c"
+L_049afb78 .functor OR 1, L_049afaa0, L_049afae8, C4<0>, C4<0>;
+v0497ac18_0 .net "a", 0 0, L_049afaa0;  alias, 1 drivers
+v0497ac70_0 .net "b", 0 0, L_049afae8;  alias, 1 drivers
+v0497acc8_0 .net "c", 0 0, L_049afb78;  alias, 1 drivers
+    .scope S_04972dd8;
+T_0 ;
+    %vpi_call 3 30 "$dumpfile", "OR_1_tb.vcd" {0 0 0};
+    %vpi_call 3 31 "$dumpvars", 32'sb00000000000000000000000000000000, S_04972dd8 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b140_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b198_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b140_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b198_0, 0, 1;
+    %delay 500, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0497b198_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b140_0, 0, 1;
+    %delay 200, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0497b140_0, 0, 1;
+    %delay 200, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b198_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0497b140_0, 0, 1;
+    %delay 200, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0497b140_0, 0, 1;
+    %delay 200, 0;
+    %delay 100, 0;
+    %vpi_call 3 67 "$display", "End of simulation" {0 0 0};
+    %vpi_call 3 68 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "C:\Users\jjjimenez/.apio\packages\toolchain-iverilog\vlib\system.v";
+    "OR_1_tb.v";
+    "OR_1.v";

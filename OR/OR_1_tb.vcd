@@ -1,26 +1,26 @@
 $date
-	Sun Oct 23 17:57:11 2016
+	Wed Nov 02 18:40:17 2016
 $end
 $version
 	Icarus Verilog
 $end
 $timescale
-	10ns
+	1ns
 $end
 $scope module main_tb $end
 $var wire 1 ! output_o $end
-$var reg 1 " input_in_a $end
-$var reg 1 # input_in_b $end
+$var reg 1 " input_A $end
+$var reg 1 # input_B $end
 $scope module MAIN $end
-$var wire 1 ! v676ecb $end
-$var wire 1 # va57306 $end
-$var wire 1 " va9742d $end
-$var wire 1 $ w1 $end
-$var wire 1 % w2 $end
-$var wire 1 & w0 $end
-$scope module v6e33e9 $end
-$var wire 1 $ v0e28cb $end
-$var wire 1 % v3ca442 $end
+$var wire 1 # v645ecc $end
+$var wire 1 " v963cc9 $end
+$var wire 1 ! vd1c097 $end
+$var wire 1 $ w0 $end
+$var wire 1 % w1 $end
+$var wire 1 & w2 $end
+$scope module v9285f8 $end
+$var wire 1 % v0e28cb $end
+$var wire 1 $ v3ca442 $end
 $var wire 1 & vcbab45 $end
 $var wire 1 ' w0 $end
 $var wire 1 ( w1 $end
@@ -50,28 +50,22 @@ $end
 1!
 1&
 1)
-1'
-1$
-1"
 1(
-1%
+1$
 1#
 #700
+1'
+1%
+1"
+#900
+0(
+0$
+0#
+#1100
 0!
 0&
 0)
 0'
-0$
-0"
-#900
-1'
-1$
-1"
-0(
 0%
-0#
-#1100
-0'
-0$
 0"
 #1400
