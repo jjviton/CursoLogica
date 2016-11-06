@@ -1,0 +1,54 @@
+$date
+	Sun Nov 06 09:00:53 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module main_tb $end
+$var wire 1 ! output_o $end
+$var reg 1 " input_i $end
+$scope module MAIN $end
+$var wire 1 " v6d4cdf $end
+$var wire 1 ! vabc7eb $end
+$var wire 1 # w0 $end
+$var wire 1 $ w1 $end
+$scope module vcfedf9 $end
+$var wire 1 # v0e28cb $end
+$var wire 1 $ vcbab45 $end
+$var wire 1 % w0 $end
+$var wire 1 & w1 $end
+$scope module vd54ca1 $end
+$var wire 1 % a $end
+$var wire 1 & c $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1&
+0%
+1$
+0#
+0"
+1!
+$end
+#500
+0!
+0$
+0&
+1%
+1#
+1"
+#1000
+1!
+1$
+1&
+0%
+0#
+0"
+#1600
