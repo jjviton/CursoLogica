@@ -13,8 +13,8 @@ module main_tb ();
  parameter DURATION = 10;
  
  // Input/Output
- reg input_i;
- wire output_o;
+ reg input_i;    // entrada de señales codificadas en este fichero.
+ wire output_o;		// señales de respuesta del circuito diseñado.
  
  // Module instance
  main MAIN (
