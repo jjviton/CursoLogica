@@ -39,6 +39,42 @@ module main_tb ();
   input_a = 0;
   input_b = 0;
   input_c = 0;
+  
+// JJVITON testing process
+  
+  //input_in_x =1;
+  input_a = 1'b1;
+  input_b = 1;
+  input_c = 1'b1;
+  
+  #50  // espero un poco para empezar.
+  
+  
+  input_a = 1'b0;  //1
+  input_b = 1'b1;
+  input_c = 1'b1;
+  #20
+  input_a = 1'b0;  
+  input_b = 1'b0;
+  input_c = 1'b1;
+  #20
+  input_a = 1'b0;  //1
+  input_b = 1'b0;
+  input_c = 1'b0;
+  #20
+  input_a = 1'b0;  //1
+  input_b = 1'b1;
+  input_c = 1'b0;
+  #20
+  input_a = 1'b1;  //1
+  input_b = 1'b0;
+  input_c = 1'b0;
+  #20
+  
+// JJVITON testing process  (fin) 
+  
+  
+  
  
   #(DURATION) $display("End of simulation");
   $finish;
