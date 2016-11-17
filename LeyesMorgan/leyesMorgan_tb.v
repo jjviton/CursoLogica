@@ -47,16 +47,16 @@ module main_tb ();
   #50  // espero un poco para empezar.
   
   
-  input_a = 1'b0;  //1
+  input_a = 1'b0;  //0
   input_b = 1'b1;
   #20
   input_a = 1'b0;  
   input_b = 1'b0;
   #20
-  input_a = 1'b0;  //1
+  input_a = 1'b0;  //0
   input_b = 1'b0;
   #20
-  input_a = 1'b0;  //1
+  input_a = 1'b0;  //0
   input_b = 1'b1;
   #20
   input_a = 1'b1;  //1
